@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register_employee">
+
+    <ScrollView
+        android:id="@+id/scrollRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:hint="@string/label_regname">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentRight="true"
+                android:paddingRight="15dp"
+                android:hint="@string/label_regendname">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regEndName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="15dp"
+                android:hint="@string/label_position">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regPosition"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginEnd="15dp"
+                android:hint="@string/tvdatebirthday"
+                app:placeholderText="dd/mm/aaaa">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regDateBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="date">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="240dp"
+                android:layout_marginEnd="15dp"
+                android:hint="@string/tvexperience">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regExperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="310dp"
+                android:layout_marginEnd="15dp"
+                android:hint="@string/tvdateinit">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regDateInit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="380dp"
+                android:layout_marginEnd="15dp"
+                android:hint="@string/tvcountry">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="450dp"
+                android:layout_marginEnd="15dp"
+                android:hint="@string/tvcity">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textLayoutUrl"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="520dp"
+                android:layout_marginEnd="15dp"
+                android:hint="@string/labelUrl"
+                app:endIconDrawable="@drawable/ic_baseline_autorenew_24"
+                app:endIconMode="custom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regUrlImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textUri">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/regImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="590dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_user"/>
+
+            <Button
+                android:id="@+id/btnRegisterEmployee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="750dp"
+                android:backgroundTint="@color/teal_300"
+                android:text="@string/btn_registro"
+                ></Button>
+        </RelativeLayout>
+
+
+    </ScrollView>
+</FrameLayout>

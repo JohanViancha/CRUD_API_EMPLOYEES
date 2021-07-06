@@ -1,9 +1,5 @@
 package com.example.consumoapi_empleados.model;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class Employees {
 
     private int id;
@@ -16,6 +12,20 @@ public class Employees {
     private int ani_experiencia;
     private String pais_residencia;
     private String ciudad_residencia;
+
+    public Employees(String nombre, String apellidos, String cargo, String foto,
+                     String fecha_nacimiento, String fecha_inicio, int ani_experiencia,
+                     String pais_residencia, String ciudad_residencia) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.cargo = cargo;
+        this.foto = foto;
+        this.fecha_nacimiento = fecha_nacimiento;
+        this.fecha_inicio = fecha_inicio;
+        this.ani_experiencia = ani_experiencia;
+        this.pais_residencia = pais_residencia;
+        this.ciudad_residencia = ciudad_residencia;
+    }
 
     public int getId() {
         return id;

@@ -1,22 +1,18 @@
 package com.example.consumoapi_empleados;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.consumoapi_empleados.model.Employees;
-
-import retrofit2.Response;
-import retrofit2.http.Body;
 
 public class detail_frg extends Fragment {
 
@@ -29,6 +25,7 @@ public class detail_frg extends Fragment {
     private TextView country;
     private TextView city;
     private ImageView photo;
+    private ScrollView scrollView;
     public detail_frg(Employees employee){
         this.employee = employee;
     }
@@ -44,6 +41,7 @@ public class detail_frg extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_detail_frg, container, false);
+        scrollView = view.findViewById(R.id.scroll);
         fullname = view.findViewById(R.id.fullname);
         position = view.findViewById(R.id.position);
         birthdate = view.findViewById(R.id.birthdate);

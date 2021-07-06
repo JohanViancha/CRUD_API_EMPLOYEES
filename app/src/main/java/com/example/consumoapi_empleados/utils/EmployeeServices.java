@@ -5,7 +5,9 @@ import com.example.consumoapi_empleados.model.Employees;
 import java.util.List;
 
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.PartMap;
 import retrofit2.http.Path;
 
@@ -15,4 +17,7 @@ public interface EmployeeServices {
 
     @GET("list/{id}")
     Call<Employees>getEmployee(@Path("id") int id);
+
+    @POST("save")
+    Call<Boolean>save(@Body Employees employees);
 }

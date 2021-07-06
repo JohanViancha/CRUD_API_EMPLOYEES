@@ -49,6 +49,7 @@ public class ListAdapterEmployees extends RecyclerView.Adapter<ListAdapterEmploy
 
         holder.viewDetail.setOnClickListener(v -> {
             Intent intent = new Intent(context, detail.class);
+            intent.putExtra("option","detail");
             intent.putExtra("id",employees.getId());
             context.startActivity(intent);
 
