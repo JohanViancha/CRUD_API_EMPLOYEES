@@ -6,8 +6,13 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.PartMap;
+import retrofit2.http.Path;
 
 public interface EmployeeServices {
-    @GET("listar/")
-    Call<List<Employees>>getEmployees();
+    @GET("list")
+    Call<List<Employees>>listEmployees();
+
+    @GET("list/{id}")
+    Call<Employees>getEmployee(@Path("id") int id);
 }

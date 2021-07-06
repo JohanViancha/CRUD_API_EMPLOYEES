@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ConsumoAPI-Empleados</string>
+    <string name="button_detalle">Ver detalle</string>
+    <string name="tvdatebirthday">Fecha de nacimiento</string>
+    <string name="tvexperience">Años de experiencia</string>
+    <string name="tvdateinit">Fecha de inicio</string>
+    <string name="tvcountry">País de residencia</string>
+    <string name="tvcity">ciudad de residencia</string>
+    <string name="tvloading">Cargando...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
